@@ -23,12 +23,9 @@
 }
 
 .header-menu a {  
+  display: inline-block;  
   padding: 16px 0px;
-  display: inline-block;
-  font-size: 18px;  
-  position: relative;
-  font-family: 'Poppins';
-  font-weight: 400;
+  position: relative; 
 }
 
 .header-menu a:after {
