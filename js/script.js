@@ -11,5 +11,19 @@ function ativarLink(link) {
   }  
 }
 
-// Quero ativar essa função em cada um dos links
+// Quero ativar essa função para percorrer o array e fazer o tratamento.
 links.forEach(ativarLink);
+
+// Ativar Itens do orçamento
+
+const parametros = new URLSearchParams(location.search);
+
+function ativarProduto(parametro) {
+  const elemento = document.getElementById(parametro);
+  if(elemento) {
+    elemento.checked = true;
+  }
+}
+
+parametros.forEach(ativarProduto);
+
